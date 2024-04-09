@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Button Example</title>
+    <style>
+        body {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #f0f0f0; /* Cor de fundo clara */
+        }
+        #moving-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #ff69b4; /* Cor rosa */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        #notification-button {
+            margin-top: 50px;
+            cursor: pointer;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #9370db; /* Cor roxa */
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+        h1 {
+            color: #9370db; /* Cor roxa */
+        }
+    </style>
+</head>
+<body>
+
+<h1>Aceita sair comigo?</h1>
+
+    <button id="moving-button">Não</button>
+    <button id="notification-button">Sim</button>
+    <script src="script.js"></script>
+</body>
+</html>
